@@ -9,7 +9,7 @@ export const obtenerHistorialAlumno = async(req,res)=>{
 
         let clave_a;
 
-        const usuario = req.session.usuario;
+        const usuarigito = req.session.usuario;
 
         if(usuario.rol === "Alumno"){
 

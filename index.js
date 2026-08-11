@@ -19,7 +19,7 @@ import "./backend/models/relaciones.js";
 const app = express();
 
 app.use(cors({
-    origin: 'https://control-escolar-frontend.onrender.com', // Reemplaza con la URL de tu frontend
+    origin: 'https://controlescolar-1-dx30.onrender.com/', // Reemplaza con la URL de tu frontend
     credentials: true // Permite enviar cookies con las solicitudes
 }));
 app.use(express.json());
@@ -43,7 +43,7 @@ db.authenticate()
     });
 
 //Servidor
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Servidor iniciado en el puerto http://localhost:${port}`);
 });

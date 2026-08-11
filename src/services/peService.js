@@ -1,6 +1,6 @@
 import axios from "axios"; // Importar axios para hacer peticiones HTTP
 
-const API = "http://localhost:3000/api/periodos";
+const API = "https://controlescolar-1-dx30.onrender.com/api/periodos";
 
 // Obtener periodos
 export const obtenerPeriodos = async() =>{

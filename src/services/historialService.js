@@ -3,7 +3,7 @@ axios.defaults.withCredentials=true;
 
 export const obtenerHistorial = async()=>{
     const respuesta = await axios.get(
-        "http://localhost:3000/api/historial",
+        "https://controlescolar-1-dx30.onrender.com/api/historial",
         {
             withCredentials:true
         }

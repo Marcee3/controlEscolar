@@ -1,6 +1,6 @@
 import axios from "axios"; // Importar axios para hacer peticiones HTTP
 axios.defaults.withCredentials = true;
-const API = "http://localhost:3000/api/usuarios";
+const API = "https://controlescolar-1-dx30.onrender.com/api/usuarios";
 
 //Obtener usuarios
 export const obtenerUsuarios = async()=>{
@@ -44,7 +44,7 @@ export const editarUsuario = async(id, usuario)=>{
 export const loginUsuario = async(usuario)=>{
     try {
         const respuesta = await axios.post(
-        "http://localhost:3000/api/login",
+        "https://controlescolar-1-dx30.onrender.com/api/login",
         usuario,
         {
             withCredentials: true, // Permite enviar cookies con la solicitud
@@ -60,7 +60,7 @@ export const loginUsuario = async(usuario)=>{
 // Cerrar sesion
 export const cerrarSesion = async()=>{
     const respuesta = await axios.post(
-        "http://localhost:3000/api/logout",
+        "https://controlescolar-1-dx30.onrender.com/api/logout",
         {},
         {
             withCredentials:true

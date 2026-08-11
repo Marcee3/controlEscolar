@@ -1,6 +1,6 @@
 import axios from "axios"; // Importar axios para hacer peticiones HTTP
 axios.defaults.withCredentials = true;
-const API = "http://localhost:3000/api/asignaciones";
+const API = "https://controlescolar-1-dx30.onrender.com/api/asignaciones";
 
 //Obtener asignaciones
 export const obtenerAsignaciones = async()=>{

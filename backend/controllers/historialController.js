@@ -2,7 +2,7 @@ import Calificacion from "../models/Calificacion.js";
 import Asignacion_Materia from "../models/Asignacion_Materia.js";
 import Materia from "../models/Materia.js";
 import Grupo from "../models/Grupo.js";
-import Alumno from '../models/alumno.js';
+import Alumno from '../models/Alumno.js';
 
 export const obtenerHistorialAlumno = async(req,res)=>{
     try{

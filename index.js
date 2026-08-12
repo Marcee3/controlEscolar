@@ -19,7 +19,7 @@ import "./backend/models/relaciones.js";
 const app = express();
 
 app.use(cors({
-    origin: 'https://controlescolar-1-dx30.onrender.com/', // Reemplaza con la URL de tu frontend
+    origin: 'https://controlescolar-1-dx30.onrender.com', // Reemplaza con la URL de tu frontend
     credentials: true // Permite enviar cookies con las solicitudes
 }));
 app.use(express.json());

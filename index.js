@@ -23,6 +23,7 @@ app.use(cors({
     credentials: true // Permite enviar cookies con las solicitudes
 }));
 app.use(express.json());
+app.use(express.static('dist'));
 app.use(session({
     secret: 'controlEscolar',
     resave: false,
